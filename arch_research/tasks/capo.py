@@ -23,10 +23,10 @@ Notes
 
 CLI examples:
   # Generate a CSV table with 1000 rows
-  python capo.py --num 1000 --csv capo.csv
+  python -m arch_research.tasks.capo --num 1000 --csv capo.csv
 
   # Stream JSONL bios (one per line)
-  python capo.py --num 100 --jsonl capo.jsonl
+  python -m arch_research.tasks.capo --num 100 --jsonl capo.jsonl
 """
 
 from __future__ import annotations

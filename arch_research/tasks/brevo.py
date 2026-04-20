@@ -31,11 +31,11 @@ CLI usage examples:
   # JSONL streaming (defaults match paper):
   #   brevo1: N∈{110,90,70}, ctx=1024
   #   brevo2: N∈{50,40,30},  ctx=1536
-  python brevo.py --variant brevo1 --Nset 110,90,70 --num 100 > brevo1.jsonl
-  python brevo.py --variant brevo2 --Nset 50,40,30  --num 100 > brevo2.jsonl
+  python -m arch_research.tasks.brevo --variant brevo1 --Nset 110,90,70 --num 100 > brevo1.jsonl
+  python -m arch_research.tasks.brevo --variant brevo2 --Nset 50,40,30  --num 100 > brevo2.jsonl
 
   # Single JSON array
-  python brevo.py --variant brevo2 --Nset 50,40,30 --num 100 --format json --output brevo.json
+  python -m arch_research.tasks.brevo --variant brevo2 --Nset 50,40,30 --num 100 --format json --output brevo.json
 """
 
 from __future__ import annotations

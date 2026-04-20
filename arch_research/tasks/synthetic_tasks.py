@@ -5,10 +5,7 @@ from typing import Dict, List, Sequence, Tuple
 
 import torch
 
-import brevo
-import depo
-import lano
-import mano
+from . import brevo, depo, lano, mano
 from arch_research.data.batch import TaskBatch
 from arch_research.data.tokenizers import SimpleWhitespaceTokenizer
 from arch_research.tasks.base import BaseTask
@@ -168,4 +165,3 @@ class LanoTask(SyntheticWhitespaceTask):
         for idx in range(1, len(tokens)):
             mask[idx] = True
         return mask
-

@@ -8,7 +8,7 @@ if ROOT not in sys.path:
 
 import torch
 
-from gpt2 import Config, GPT
+from arch_research.models.gpt2 import Config, GPT
 
 
 def test_gpt_forward_backward_integration():

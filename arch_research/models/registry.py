@@ -1,11 +1,9 @@
 from __future__ import annotations
 
-from dataclasses import asdict, dataclass, fields, is_dataclass
+from dataclasses import dataclass, fields
 from typing import Any, Callable, Dict
 
-import gpt2
-import gpt2_rope
-import gpt_ttt
+from . import gpt2, gpt2_rope, gpt_ttt
 
 
 @dataclass

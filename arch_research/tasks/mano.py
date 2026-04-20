@@ -26,10 +26,10 @@ Output JSON objects:
 
 CLI examples:
   # JSONL streaming
-  python mano.py --Lset 16,13,10 --num 1000 > mano.jsonl
+  python -m arch_research.tasks.mano --Lset 16,13,10 --num 1000 > mano.jsonl
 
   # Single JSON array
-  python mano.py --L 16 --num 100 --format json --output mano.json
+  python -m arch_research.tasks.mano --L 16 --num 100 --format json --output mano.json
 """
 
 from __future__ import annotations

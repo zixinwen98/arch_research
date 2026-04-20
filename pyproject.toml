@@ -8,19 +8,6 @@ version = "0.1.0"
 description = "Architecture research experiments and synthetic tasks"
 requires-python = ">=3.10"
 
-[tool.setuptools]
-py-modules = [
-  "brevo",
-  "capo",
-  "depo",
-  "gpt2",
-  "gpt2_rope",
-  "gpt_ttt",
-  "lano",
-  "mano",
-  "train_capo",
-]
-
 [tool.setuptools.packages.find]
 where = ["."]
 include = ["arch_research*"]

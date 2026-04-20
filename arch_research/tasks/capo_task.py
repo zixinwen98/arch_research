@@ -5,7 +5,7 @@ from typing import Dict, Iterable, List, Tuple
 
 import torch
 
-import capo
+from . import capo
 from arch_research.data.batch import TaskBatch
 from arch_research.data.tokenizers import SimpleWhitespaceTokenizer, build_gpt2_subset_tokenizer
 from arch_research.tasks.base import BaseTask
@@ -130,4 +130,3 @@ class CapoTask(BaseTask):
             total_acc.append(acc)
         metrics["eval/value_token_accuracy"] = float(sum(total_acc) / len(total_acc)) if total_acc else 0.0
         return metrics
-

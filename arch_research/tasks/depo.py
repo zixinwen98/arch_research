@@ -18,11 +18,11 @@ Where:
 
 CLI usage examples:
   # JSONL streaming
-  python depo.py --variant depo1 --N 50 --K 8 --num 1000 > data.jsonl
-  python depo.py --variant depo2 --N 80 --K 4 --schedule sqrt --seed 42 --output data.jsonl
+  python -m arch_research.tasks.depo --variant depo1 --N 50 --K 8 --num 1000 > data.jsonl
+  python -m arch_research.tasks.depo --variant depo2 --N 80 --K 4 --schedule sqrt --seed 42 --output data.jsonl
 
   # Single JSON array file
-  python depo.py --variant depo1 --N 50 --K 8 --num 1000 --format json --output data.json
+  python -m arch_research.tasks.depo --variant depo1 --N 50 --K 8 --num 1000 --format json --output data.json
 
 Output lines:
   {"text": "...", "meta": {"variant": "depo1|depo2", "N": int, "K": int, "n": int, "t": int, "ctx": int, "seed": int, "schedule": "uniform|sqrt"}}
