@@ -24,7 +24,7 @@ import torch
 import torch.nn.functional as F
 
 from gpt_ttt import Config as TTTConfig, GPT_TTT
-from capo_dataset import build_capo_database, generate_bio_entry
+from capo import build_capo_database, generate_bio_entry
 
 
 # ------------------------------ Tokenizer ---------------------------------- #

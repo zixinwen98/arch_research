@@ -27,10 +27,10 @@ Variants (depth/levels):
 
 CLI examples:
   # JSONL streaming with paper-like cfg3f settings
-  python lano_dataset.py --variant cfg3f --num 1000 > lano3f.jsonl
+  python lano.py --variant cfg3f --num 1000 > lano3f.jsonl
 
   # Single JSON array with cfg3k
-  python lano_dataset.py --variant cfg3k --num 200 --format json --output lano3k.json
+  python lano.py --variant cfg3k --num 200 --format json --output lano3k.json
 """
 
 from __future__ import annotations
@@ -200,4 +200,3 @@ def main(argv: Sequence[str] | None = None) -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

@@ -10,13 +10,13 @@ requires-python = ">=3.10"
 
 [tool.setuptools]
 py-modules = [
-  "brevo_dataset",
-  "capo_dataset",
-  "depo_dataset",
+  "brevo",
+  "capo",
+  "depo",
   "gpt2",
+  "gpt2_rope",
   "gpt_ttt",
-  "lano_dataset",
-  "mano_dataset",
-  "mini_gpt2_rope",
-  "train_capo_ttt",
+  "lano",
+  "mano",
+  "train_capo",
 ]
