@@ -11,7 +11,4 @@ faker==40.15.0
 pytest==9.0.3
 
 # Notes
-# - flash-attn was requested separately but is not included here because it has
-#   not been installed successfully in this environment yet.
-# - The current Slurm config reports GresTypes=(null), so GPU resource requests
-#   through srun/sbatch are not currently configured on this interface.
+# - flash-attn is installed separately through scripts/install_flash_attn_slurm.sh.

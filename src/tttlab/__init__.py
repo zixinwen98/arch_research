@@ -1,2 +1,0 @@
-"""TTT lab package."""
-

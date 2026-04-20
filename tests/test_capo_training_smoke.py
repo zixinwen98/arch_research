@@ -5,11 +5,10 @@ from contextlib import redirect_stdout
 
 
 ROOT = os.path.dirname(os.path.dirname(__file__))
-SRC = os.path.join(ROOT, "src")
-if SRC not in sys.path:
-    sys.path.insert(0, SRC)
+if ROOT not in sys.path:
+    sys.path.insert(0, ROOT)
 
-from tttlab.training.capo_ttt import main
+from train_capo_ttt import main
 
 
 def test_capo_training_smoke():

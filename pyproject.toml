@@ -3,14 +3,20 @@ requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "tttlab"
+name = "arch_research"
 version = "0.1.0"
-description = "Toy TTT experiments and synthetic tasks"
+description = "Architecture research experiments and synthetic tasks"
 requires-python = ">=3.10"
 
 [tool.setuptools]
-package-dir = {"" = "src"}
-
-[tool.setuptools.packages.find]
-where = ["src"]
-
+py-modules = [
+  "brevo_dataset",
+  "capo_dataset",
+  "depo_dataset",
+  "gpt2",
+  "gpt_ttt",
+  "lano_dataset",
+  "mano_dataset",
+  "mini_gpt2_rope",
+  "train_capo_ttt",
+]
