@@ -1,0 +1,17 @@
+# Local package
+-e .
+
+# Core runtime
+torch==2.11.0
+transformers==5.5.4
+triton==3.6.0
+faker==40.15.0
+
+# Testing
+pytest==9.0.3
+
+# Notes
+# - flash-attn was requested separately but is not included here because it has
+#   not been installed successfully in this environment yet.
+# - The current Slurm config reports GresTypes=(null), so GPU resource requests
+#   through srun/sbatch are not currently configured on this interface.
